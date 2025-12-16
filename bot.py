@@ -4,7 +4,6 @@ import requests
 import re
 import time
 import random
-from keep_alive import keep_alive
 import os
 import threading
 import traceback
@@ -303,8 +302,8 @@ def handle_links(message):
 
 # ==================== ▶️ تشغيل ====================
 try:
-    keep_alive()
 except: pass
 
 print("Bot Started (Diamond Version) 🚀")
+
 bot.infinity_polling()
